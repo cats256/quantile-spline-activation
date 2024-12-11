@@ -1,5 +1,5 @@
 # quantile-spline-activation
-Learnable activation that adapts to input distribution. This activation function is based on linear spline, where control points are determined dynamically based on inputs' distribution quantiles. The inputs' distribution is approximated by storing current and previous forward pass inputs in a sliding window. Works pretty well I'd say. More updates later XD
+Learnable PyTorch activation function that adapts to input distribution. This activation function is based on linear spline, where locations of control points are determined dynamically based on inputs' distribution quantiles. The inputs' distribution is approximated by storing current and previous forward pass inputs in a sliding window. Works pretty well I'd say. More updates later XD
 
 ```python
 class CustomActivation(nn.Module):
