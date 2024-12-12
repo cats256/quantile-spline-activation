@@ -1,5 +1,8 @@
-# quantile-spline-activation
-Learnable PyTorch activation function that adapts to input distribution as it shifts with training. This activation function is based on linear spline, where locations of control points are determined dynamically based on inputs' distribution quantiles. The inputs' distribution is approximated by storing current and previous forward pass inputs in a sliding window. Works pretty well I'd say. More updates later. Give the repo a star if you like this XD
+# Adaptive Quantile Activation (AQUA): A learnable activation function that dynamically adapts to input distribution
+
+AQUA is a learnable activation function that adapts to the input distribution as it evolves during training. This activation leverages a linear spline-based approach, where the quantiles of the input distribution dynamically determine the control points' locations during training. The input distribution and quantiles are approximated using a sliding window that stores the current and previous forward pass inputs.
+
+Works pretty well I'd say. More updates later. Give the repo a star if you like this XD.
 
 ```python
 class CustomActivation(nn.Module):
